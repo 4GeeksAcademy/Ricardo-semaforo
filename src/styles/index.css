@@ -1,11 +1,49 @@
-/* 
+.cable{
+    background-color: black;
+    width: 8px;
+    height: 80px;
+    margin: auto;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.trafficlight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    width: 85px;
+    height: 200px;
+    margin: auto;
+    border-radius: 8px;
+}
 
-*/
+.light {
+    
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.on{
+    box-shadow: -3px 4px 27px 21px rgba(201,191,146,0.75);
+-webkit-box-shadow: -3px 4px 27px 21px rgba(201,191,146,0.75);
+-moz-box-shadow: -3px 4px 27px 21px rgba(201,191,146,0.75);
+}
