@@ -20,14 +20,23 @@ const Home = () => {
 	}
 
 	const purpleActive = () => {
-		setIncludePurple (true);
+		if(includePurple){
+			if(lightColor === "purple"){
+				setLightColor("red");
+			}
+			setIncludePurple(false);
+		}else
+		{setIncludePurple (true);
 		setLightColor("purple");
 	}
+	}
+
+
 
 	return (
 		<div className="text-center">
             <div className="cable"></div>
-			<div className="trafficlight" style={{height:trafficLightHeight}} >
+			<div className="trafficlight" /*style={{height:trafficLightHeight}} review later, to do it more dynamic*/ >
 				<div className={"light red " + (lightColor =="red" ? "on" : "") } onClick={() => setLightColor("red")} ></div>
 				<div className={"light yellow " + (lightColor =="yellow" ? "on" : "") } onClick={() => setLightColor("yellow")}></div>
 				<div className={"light green " + (lightColor =="green" ? "on" : "") } onClick={() => setLightColor("green")}></div>
